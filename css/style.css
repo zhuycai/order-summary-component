@@ -1,0 +1,203 @@
+:root {
+    font-family: 'Red Hat Display', sans-serif;
+
+    --pale-blue: hsl(225, 100%, 94%);
+    --bright-blue: hsl(245, 75%, 52%);
+    --light-blue: hsl(245, 86%, 66%);
+    --very-pale-blue:  hsl(225, 100%, 98%);
+    --desaturated-blue: hsl(224, 23%, 55%);
+    --dark-blue: hsl(223, 47%, 23%);
+}
+
+img {
+    max-width: 100%;
+}
+
+body, h2, h3, p, ul {
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    list-style: none;
+}
+
+body {
+    font-size: 1em;
+    background: url('../images/pattern-background-mobile.svg') no-repeat top left/100% var(--pale-blue);
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.card {
+    max-width: 290px;
+    min-width: 265px;
+    padding-bottom: 1.6em;
+    border-radius: 1.2em;
+    text-align: center;
+    /* background: var(--very-pale-blue); */
+    background: white;
+}
+
+.card-photo {
+    margin-bottom: 1.6em;
+    border-top-left-radius: 1.2em;
+    border-top-right-radius: 1.2em;
+}
+
+.card-info {
+    display: flex;
+    flex-direction: column;
+    gap: 1.4em;
+    padding: 0 1.6em;
+    font-size: .9em;
+    line-height: 1.4em;
+    color: var(--desaturated-blue);
+}
+
+.card-info > .title {
+    font-size: 1.5em;
+    font-weight: 900;
+    color: var(--dark-blue);
+}
+
+.order-list {
+    display: flex;
+    flex-flow: column;
+}
+
+.order-list > .order {
+    display: flex;
+    justify-content: space-between;
+    padding: 1em;
+    border-radius: .6em;
+    background: var(--very-pale-blue);
+}
+
+.order-list > .order > .song > .icon-music {
+    float: left;
+    width: 2.8em;
+    height: 2.8em;
+    border-radius: 50%;   
+    background: url('../images/icon-music.svg') center/90% no-repeat var(--pale-blue);
+}
+
+.order-list > .order > .song > .song-info {
+    float: left;
+    margin-left: 1em;
+    font-size: .8em;
+}
+
+.order-list > .order > .song > .song-info > h3 {
+    font-size: 1.1em;
+    font-weight: 900;
+    color: var(--dark-blue);
+}
+
+.order-list > .order > .change-btn {
+    font-size: .9em;
+    font-weight: 700;
+    line-height: 2.8em;
+}
+
+.order-list > .order > .change-btn:hover {
+    color: var(--light-blue);
+    text-decoration: none;
+}
+
+.card-info > .payment-btn {
+    border: none;
+    border-radius: .7em;
+    box-shadow: 0 .9em .7em 0 var(--pale-blue);
+    font-weight: 700;
+    line-height: 2.8em;
+    color: var(--very-pale-blue);
+    background: var(--bright-blue);
+    cursor: pointer;
+}
+
+.card-info > .payment-btn:hover {
+    background-color: var(--light-blue);
+}
+
+.card-info > .cancel-btn {
+    border: none;
+    font-weight: 700;
+    color: var(--desaturated-blue);
+    background: none;
+    cursor: pointer;
+}
+
+.card-info > .cancel-btn:hover {
+    color: var(--dark-blue);
+}
+
+footer {
+    position: absolute;
+    width: 100%;
+    bottom: 2em;
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+@media  screen and (min-width: 376px) {
+    body {
+    background: url('../images/pattern-background-desktop.svg') no-repeat top left/100% var(--pale-blue);
+    }   
+}
+
+
+/* red-hat-display-500 */
+@font-face {
+    font-family: 'Red Hat Display';
+    font-style: normal;
+    font-weight: 500;
+    src: url('//lib.baomitu.com/fonts/red-hat-display/red-hat-display-500.eot'); /* IE9 Compat Modes */
+    src: local('Red Hat Display'), local('RedHat Display-Normal'),
+         url('//lib.baomitu.com/fonts/red-hat-display/red-hat-display-500.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('//lib.baomitu.com/fonts/red-hat-display/red-hat-display-500.woff2') format('woff2'), /* Super Modern Browsers */
+         url('//lib.baomitu.com/fonts/red-hat-display/red-hat-display-500.woff') format('woff'), /* Modern Browsers */
+         url('//lib.baomitu.com/fonts/red-hat-display/red-hat-display-500.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('//lib.baomitu.com/fonts/red-hat-display/red-hat-display-500.svg#RedHat Display') format('svg'); /* Legacy iOS */
+  }
+    
+  /* red-hat-display-700 */
+  @font-face {
+    font-family: 'Red Hat Display';
+    font-style: normal;
+    font-weight: 700;
+    src: url('//lib.baomitu.com/fonts/red-hat-display/red-hat-display-700.eot'); /* IE9 Compat Modes */
+    src: local('Red Hat Display'), local('RedHat Display-Normal'),
+         url('//lib.baomitu.com/fonts/red-hat-display/red-hat-display-700.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('//lib.baomitu.com/fonts/red-hat-display/red-hat-display-700.woff2') format('woff2'), /* Super Modern Browsers */
+         url('//lib.baomitu.com/fonts/red-hat-display/red-hat-display-700.woff') format('woff'), /* Modern Browsers */
+         url('//lib.baomitu.com/fonts/red-hat-display/red-hat-display-700.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('//lib.baomitu.com/fonts/red-hat-display/red-hat-display-700.svg#RedHat Display') format('svg'); /* Legacy iOS */
+  }
+    
+  /* red-hat-display-900 */
+  @font-face {
+    font-family: 'Red Hat Display';
+    font-style: normal;
+    font-weight: 900;
+    src: url('//lib.baomitu.com/fonts/red-hat-display/red-hat-display-900.eot'); /* IE9 Compat Modes */
+    src: local('Red Hat Display'), local('RedHat Display-Normal'),
+         url('//lib.baomitu.com/fonts/red-hat-display/red-hat-display-900.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('//lib.baomitu.com/fonts/red-hat-display/red-hat-display-900.woff2') format('woff2'), /* Super Modern Browsers */
+         url('//lib.baomitu.com/fonts/red-hat-display/red-hat-display-900.woff') format('woff'), /* Modern Browsers */
+         url('//lib.baomitu.com/fonts/red-hat-display/red-hat-display-900.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('//lib.baomitu.com/fonts/red-hat-display/red-hat-display-900.svg#RedHat Display') format('svg'); /* Legacy iOS */
+  }
+    
