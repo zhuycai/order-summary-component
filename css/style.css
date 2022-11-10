@@ -126,7 +126,9 @@ main {
 }
 
 .card-info > .cancel-btn {
+    width: 8em;
     border: none;
+    align-self: center;
     font-weight: 700;
     color: var(--desaturated-blue);
     background: none;
